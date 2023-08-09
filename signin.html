@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign in</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="header">
+                    <a href="onboarding.html" class="back"
+                        ><span class="sr-only">Back</span></a
+                    >
+                    <h1 class="page-title" id="title-signin">Sign in</h1>
+                </div>
+            </div>
+        </header>
+        <main id="main-with-small-header" class="container">
+            <form action="dashboard.html" aria-labelledby="title-signin">
+                <div class="form-line">
+                    <label for="phone-number">Phone number</label>
+                    <div class="input-fixed-icon">
+                        <div class="input-fixed-left flag-us"></div>
+                        <input
+                            class="input"
+                            type="text"
+                            inputmode="tel"
+                            id="phone-number"
+                            autocomplete="tel"
+                            placeholder="+1 900 800 70 60"
+                        />
+                    </div>
+                </div>
+                <div class="form-line">
+                    <label for="password">Password</label>
+                    <input
+                        class="input"
+                        type="password"
+                        id="password"
+                        placeholder="*******"
+                        autocomplete="current-password"
+                    />
+                </div>
+
+                <div class="form-buttons">
+                    <a
+                        href="dashboard.html"
+                        class="ax-button btn btn--block btn--link recover-password"
+                        >Recover password</a
+                    >
+                    <input
+                        type="submit"
+                        value="Sign in"
+                        class="ax-button btn btn--block btn--raised"
+                    />
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="app-header">
+            <div class="container">
+                <h1>Dashboard</h1>
+                <div id="cards">
+                    <div class="card card--dark" tabindex="0">
+                        <div class="card-container">
+                            <p class="card-amount">
+                                <data value="5230">$5,230.00</data>
+                            </p>
+                            <div class="card-details">
+                                <p class="card-type">Credit card</p>
+                                <p class="card-last4">
+                                    <span class="card-dots"
+                                        >&bull;&bull;&bull;&bull;</span
+                                    >
+                                    7530
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--light" tabindex="0">
+                        <div class="card-container">
+                            <p class="card-amount">
+                                <data value="892.53">$892.53</data>
+                            </p>
+                            <div class="card-details">
+                                <p class="card-type">Debit card</p>
+                                <p class="card-last4">
+                                    <span class="card-dots"
+                                        >&bull;&bull;&bull;&bull;</span
+                                    >
+                                    2591
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="layout-page-overlay">
+            <div class="container">
+                <section class="actions-grid" aria-label="Account actions">
+                    <div>
+                        <button
+                            class="ax-button action action-topup"
+                            aria-labelledby="label-topup"
+                        ></button>
+                        <p class="action-label" id="label-topup">Top up</p>
+                    </div>
+                    <div>
+                        <button
+                            class="ax-button action action-send"
+                            aria-labelledby="label-sendto"
+                        ></button>
+                        <p class="action-label" id="label-sendto">Send to</p>
+                    </div>
+                    <div>
+                        <button
+                            class="ax-button action action-add"
+                            aria-labelledby="label-add"
+                        ></button>
+                        <p class="action-label" id="label-add">Add card</p>
+                    </div>
+                    <div>
+                        <button
+                            class="ax-button action action-exchange"
+                            aria-labelledby="label-exchange"
+                        ></button>
+                        <p class="action-label" id="label-exchange">Exchange</p>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <div class="layout-subpage">
+                    <h2 class="title">Transactions</h2>
+                    <a href="transactions.html" class="btn btn--link"
+                        >View all</a
+                    >
+                </div>
+                <div>
+                    <p class="text--dimmed layout-timestamp">
+                        <time>Today</time>
+                    </p>
+                    <div class="entry">
+                        <img
+                            src="/assets/dropbox.png"
+                            width="40"
+                            height="40"
+                            alt=""
+                            class="avatar"
+                        />
+                        <div class="entry-details">
+                            <p class="entry-name">Dropbox</p>
+                            <p class="entry-description">Standard Plan Fee</p>
+                        </div>
+                        <div class="entry-price">
+                            <data value="-20">-$20.00</data>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <img
+                            src="/assets/person-2.png"
+                            width="40"
+                            height="40"
+                            alt=""
+                            class="avatar"
+                        />
+                        <div class="entry-details">
+                            <p class="entry-name">Mark Roller</p>
+                            <p class="entry-description">Payment received</p>
+                        </div>
+                        <div class="entry-price">
+                            <data value="250">$250.00</data>
+                        </div>
+                    </div>
+                    <p class="text--dimmed layout-timestamp">
+                        <time>Yesterday</time>
+                    </p>
+                    <div class="entry">
+                        <img
+                            src="/assets/person-6.png"
+                            width="40"
+                            height="40"
+                            alt=""
+                            class="avatar"
+                        />
+                        <div class="entry-details">
+                            <p class="entry-name">John Doe</p>
+                            <p class="entry-description">Payment sent</p>
+                        </div>
+                        <div class="entry-price">
+                            <data value="-100">-$100.00</data>
+                        </div>
+                    </div>
+                    <div class="entry">
+                        <img
+                            src="/assets/person-1.png"
+                            width="40"
+                            height="40"
+                            alt=""
+                            class="avatar"
+                        />
+                        <div class="entry-details">
+                            <p class="entry-name">Arianna Craig</p>
+                            <p class="entry-description">Payment sent</p>
+                        </div>
+                        <div class="entry-price">
+                            <data value="-50">-$50.00</data>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="nav-spacer"></div>
+        <nav>
+            <a href="dashboard.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-home-active.svg"
+                    alt="Home"
+                    width="25"
+                    height="24"
+                />
+            </a>
+            <a href="services.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-services.svg"
+                    alt="Services"
+                    width="24"
+                    height="24"
+                />
+            </a>
+            <a href="transactions.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-transactions.svg"
+                    alt="Transactions"
+                    width="24"
+                    height="24"
+                />
+            </a>
+            <a href="profile.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-profile.svg"
+                    alt="Profile"
+                    width="24"
+                    height="24"
+                />
+            </a>
+        </nav>
+
+        <script type="module" src="prototype-mode.js"></script>
+    </body>
+</html>

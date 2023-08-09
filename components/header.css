@@ -1,0 +1,26 @@
+#header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}
+
+#header .back {
+    background-image: url("/assets/back.svg");
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+
+#header .page-title {
+    margin: 0;
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+#main-with-small-header {
+    padding-top: 20px;
+}

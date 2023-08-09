@@ -1,0 +1,39 @@
+.items {
+    list-style: none;
+    padding-left: 0;
+}
+
+.items .item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-image: url("/assets/chevron-right.svg");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    padding: 15px 30px 15px 10px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--light-border-color);
+}
+
+.items li:last-child .item {
+    border-bottom: 0;
+}
+
+.items .item-name {
+    flex: 1;
+    color: var(--dark-color);
+    font-size: 0.94rem;
+    margin: 0;
+}
+
+.item-name-contact {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.item-name-phone {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--light-text-color);
+    font-size: 0.87rem;
+}

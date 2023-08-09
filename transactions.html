@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Transactions</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="app-header">
+            <h1>Transactions</h1>
+            <form>
+                <div class="container">
+                    <label class="sr-only" for="search-transactions"
+                        >Search transactions</label
+                    >
+                    <input
+                        type="search"
+                        placeholder="Search"
+                        class="input input-search"
+                        id="search-transactions"
+                    />
+                </div>
+            </form>
+        </header>
+        <main id="layout-page-overlay">
+            <div class="container">
+                <ul id="pills">
+                    <li><button class="ax-button pill active">All</button></li>
+                    <li><button class="ax-button pill">Credit card</button></li>
+                    <li><button class="ax-button pill">Debit card</button></li>
+                </ul>
+                <p class="text--dimmed layout-timestamp">
+                    <time>Today</time>
+                </p>
+                <div class="entry">
+                    <img
+                        src="/assets/dropbox.png"
+                        width="40"
+                        height="40"
+                        alt=""
+                        class="avatar"
+                    />
+                    <div class="entry-details">
+                        <p class="entry-name">Dropbox</p>
+                        <p class="entry-description">Standard Plan Fee</p>
+                    </div>
+                    <div class="entry-price">
+                        <data value="-20">-$20.00</data>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img
+                        src="/assets/person-2.png"
+                        width="40"
+                        height="40"
+                        alt=""
+                        class="avatar"
+                    />
+                    <div class="entry-details">
+                        <p class="entry-name">Mark Roller</p>
+                        <p class="entry-description">Payment received</p>
+                    </div>
+                    <div class="entry-price">
+                        <data value="250">$250.00</data>
+                    </div>
+                </div>
+                <p class="text--dimmed layout-timestamp">
+                    <time>Yesterday</time>
+                </p>
+                <div class="entry">
+                    <img
+                        src="/assets/person-6.png"
+                        width="40"
+                        height="40"
+                        alt=""
+                        class="avatar"
+                    />
+                    <div class="entry-details">
+                        <p class="entry-name">John Doe</p>
+                        <p class="entry-description">Payment sent</p>
+                    </div>
+                    <div class="entry-price">
+                        <data value="-100">-$100.00</data>
+                    </div>
+                </div>
+                <div class="entry">
+                    <img
+                        src="/assets/person-1.png"
+                        width="40"
+                        height="40"
+                        alt=""
+                        class="avatar"
+                    />
+                    <div class="entry-details">
+                        <p class="entry-name">Arianna Craig</p>
+                        <p class="entry-description">Payment sent</p>
+                    </div>
+                    <div class="entry-price">
+                        <data value="-50">-$50.00</data>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="nav-spacer"></div>
+        <nav>
+            <a href="dashboard.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-home.svg"
+                    alt="Home"
+                    width="25"
+                    height="24"
+                />
+            </a>
+            <a href="services.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-services.svg"
+                    alt="Services"
+                    width="24"
+                    height="24"
+                />
+            </a>
+            <a href="transactions.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-transactions-active.svg"
+                    alt="Transactions"
+                    width="24"
+                    height="24"
+                />
+            </a>
+            <a href="profile.html" class="nav-item">
+                <img
+                    src="https://mybank.learnhtmlcss.online/assets/nav-profile.svg"
+                    alt="Profile"
+                    width="24"
+                    height="24"
+                />
+            </a>
+        </nav>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Onboarding</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main id="onboarding-layout">
+            <div id="slider">
+                <div class="slide" tabindex="0">
+                    <img
+                        src="/assets/cards.svg"
+                        width="249"
+                        height="255"
+                        alt=""
+                    />
+                    <h1 class="title--lg slide-title">Loans & Cards</h1>
+                    <p>
+                        MyBank offers a wide variety of Loans & Cards with the
+                        best Interest Rates.
+                    </p>
+                </div>
+                <div class="slide" tabindex="0">
+                    <img
+                        src="/assets/security.svg"
+                        width="249"
+                        height="255"
+                        alt=""
+                    />
+                    <h1 class="title--lg slide-title">Best security</h1>
+                    <p>
+                        MyBank secures your money with industry standard
+                        practices.
+                    </p>
+                </div>
+                <div class="slide" tabindex="0">
+                    <img
+                        src="/assets/charts.svg"
+                        width="249"
+                        height="255"
+                        alt=""
+                    />
+                    <h1 class="title--lg slide-title">Spending insights</h1>
+                    <p>
+                        Get unprecedented insights into your spending habits so
+                        that you can save more money.
+                    </p>
+                </div>
+            </div>
+            <div id="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div id="onboarding-buttons" class="form-buttons">
+                <a
+                    href="signin.html"
+                    class="ax-button btn btn--block btn--raised"
+                    >Get started</a
+                >
+                <a href="signin.html" class="ax-button btn btn--block btn--link"
+                    >Register with Debit Card</a
+                >
+            </div>
+        </main>
+
+        <script>
+            const slider = document.querySelector("#slider");
+            const dots = document.querySelectorAll("#dots .dot");
+
+            let lastIndex = 0;
+            slider.addEventListener(
+                "scroll",
+                () => {
+                    const index = Math.round(
+                        slider.scrollLeft / window.innerWidth
+                    );
+                    if (index === lastIndex) {
+                        return false;
+                    }
+                    lastIndex = index;
+                    document
+                        .querySelector("#dots .dot.active")
+                        ?.classList.remove("active");
+                    dots[index].classList.add("active");
+                },
+                { passive: true }
+            );
+        </script>
+    </body>
+</html>

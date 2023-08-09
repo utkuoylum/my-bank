@@ -1,0 +1,18 @@
+#nav-spacer {
+    height: 70px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0px -1px 1px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+.nav-item {
+    padding: 15px 0;
+}

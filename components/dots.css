@@ -1,0 +1,20 @@
+#dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--primary-color);
+    transition: background-color 200ms, scale 100ms;
+    scale: 0.75;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    scale: 1;
+}

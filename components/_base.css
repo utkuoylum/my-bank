@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #008288;
+    --light-text-color: #545f7a;
+    --dark-color: #0f1b2d;
+    --light-surface-color: #f2f2f2;
+    --light-border-color: #dae1f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui;
+    margin: 0;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+/* it's important that this is in the base layer because of all: unset */
+.ax-button {
+    all: unset;
+    outline: revert;
+    box-sizing: border-box;
+}

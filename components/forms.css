@@ -1,0 +1,49 @@
+.input {
+    border: 1px solid var(--light-border-color);
+    width: 100%;
+    display: block;
+    padding: 13px;
+    border-radius: 3px;
+    margin: 0; /* fixes iOS bug */
+}
+
+.input-fixed-icon {
+    display: flex;
+}
+
+.input-fixed-left {
+    padding: 20px;
+    border: 1px solid var(--light-border-color);
+    border-right: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.input-fixed-left + .input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-search {
+    background-image: url("/assets/magnifier.svg");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    border-radius: 10px;
+}
+
+.form-line {
+    margin-bottom: 24px;
+}
+
+label {
+    margin-bottom: 14px;
+    display: inline-block;
+    color: var(--light-text-color);
+    font-size: 0.87rem;
+}
+
+.form-buttons {
+    display: grid;
+    gap: 15px;
+}
